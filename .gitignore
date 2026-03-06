@@ -1,0 +1,8 @@
+datasets/
+mlruns/
+slurm/
+mpl_cache/
+agent.md
+AGENTS.md
+.codex/
+containers/heal_swin_container.sif
