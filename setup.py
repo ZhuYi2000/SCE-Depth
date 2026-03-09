@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 from setuptools import find_packages, setup
 
 setup(
@@ -9,7 +9,7 @@ setup(
     author="SCE-Depth Authors",
     description="Reference implementation of SCE-Depth for wide-FOV depth estimation",
     packages=find_packages(
-        include=["compute_environment", "compatibility", "heal_swin", "heal_swin.*"]
+        include=["compute_environment", "compatibility", "sce_depth", "sce_depth.*"]
     ),
     install_requires=[
         "astropy==5.1",
@@ -50,3 +50,4 @@ setup(
         "dev": ["flake8==3.8.0"],
     },
 )
+

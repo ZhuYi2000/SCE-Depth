@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 
 import os
 from pathlib import Path
@@ -16,6 +16,7 @@ PATHS = ProjectPaths(
     matplotlib_cache=ROOT_DIR / Path("mpl_cache"),
 )
 
-CONTAINER = Container(singularity_container_name="heal_swin_container.sif")
+CONTAINER = Container(singularity_container_name="sce_depth_container.sif")
 
 LOGGING = Logging(mlflow_backend="filesystem")
+

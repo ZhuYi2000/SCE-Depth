@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import argparse
 import datetime
@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 from compute_environment import compute_environment
-from heal_swin.utils import get_paths
+from sce_depth.utils import get_paths
 
 
 def assert_mlflow_db_exists():
@@ -59,7 +59,7 @@ def env_prefix(env):
         for bind_path in get_paths.get_bind_paths():
             command += ["--mount", "type=bind,src=" + bind_path + ",dst=" + bind_path]
         command += ["-w", get_paths.get_base_path()]
-        command += ["heal_swin"]
+        command += ["sce_depth"]
         return command
     raise ValueError(f"Unknown environment: {env}")
 
@@ -141,7 +141,7 @@ def build_docker(run_args, sub_args):
         print(f"unknown arguments: {' '.join(sub_args)}")
         sys.exit(1)
     container_path = get_paths.get_container_path()
-    command = ["docker", "build", "-t", "heal_swin", "."]
+    command = ["docker", "build", "-t", "sce_depth", "."]
     run_and_print(command, cwd=container_path)
 
 
@@ -151,13 +151,13 @@ def bash(run_args, sub_args):
 
 
 def train_isaac(run_args, sub_args):
-    path = Path(__file__).parent.joinpath("heal_swin/train_isaac.py").absolute()
+    path = Path(__file__).parent.joinpath("sce_depth/train_isaac.py").absolute()
     command = env_prefix(run_args.env) + ["python3", "-u", str(path)] + sub_args
     run_and_print(command)
 
 
 def inference_isaac(run_args, sub_args):
-    path = Path(__file__).parent.joinpath("heal_swin/inference_isaac.py").absolute()
+    path = Path(__file__).parent.joinpath("sce_depth/inference_isaac.py").absolute()
     command = env_prefix(run_args.env) + ["python3", "-u", str(path)] + sub_args
     run_and_print(command)
 
@@ -206,3 +206,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
