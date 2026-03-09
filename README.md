@@ -22,7 +22,7 @@ Place datasets under the repository `datasets/` directory, with the depth datase
 
 For the default training config, data is expected under:
 
-- `datasets/CompoundDepth/isaac_depth_images_nside=128_base_pix=8_eye_fov=3.0_max_depth=10.0_dataset_size=1364_compound_eye=ico20609+sobel+2025`
+- `datasets/CompoundDepth/isaac_depth_images_nside=128_base_pix=8_eye_fov=3.0_max_depth=10.0_dataset_size=1364_compound_eye=ico20609+sobel+2026`
 
 Details and code for dataset generation are provided in the paper supplementary material.
 

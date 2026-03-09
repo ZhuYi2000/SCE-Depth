@@ -95,7 +95,7 @@ def get_train_run_config():
             eye_fov = 3.0,  # field of view of the small eye in the compound eye
             max_depth = 10.0,  # maximum depth value to use for depth prediction
             dataset_size = 1364,#600,2730,1364  # size of datasets
-            compound_eye = 'ico20609+sobel+2025',
+            compound_eye = 'ico20609+sobel+2026',
             shuffle_train_val_split=True,
         )
 
