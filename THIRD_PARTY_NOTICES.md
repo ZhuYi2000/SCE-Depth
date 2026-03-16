@@ -2,7 +2,7 @@
 
 This repository includes modified code derived from the following third-party project:
 
-## [Original Repository Name]
+## [HEAL-SWIN: A Vision Transformer On The Sphere]
 - Original authors: Jan E. Gerken, Oscar Carlsson, Hampus Linander
 - Original license: MIT License
 - Copyright:
