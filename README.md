@@ -1,9 +1,9 @@
 ﻿# SCE-Depth
 
-This project is built on top of [HEAL-SWIN](https://github.com/JanEGerken/HEAL-SWIN).  
-We sincerely thank the HEAL-SWIN authors for releasing their codebase, which this repository heavily reuses and extends.
+Official code repository for **[SCE-Depth: A Spherical Compound Eye Framework for Wide-FOV Depth Estimation](https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_SCE-Depth_A_Spherical_Compound_Eye_Framework_for_Wide_FOV_Depth_CVPR_2026_paper.html)**, accepted at **CVPR 2026**.
 
-Official code repository for **SCE-Depth: A Spherical Compound Eye Framework for Wide FOV Depth Estimation**.
+This project is built upon [HEAL-SWIN](https://github.com/JanEGerken/HEAL-SWIN).  
+We sincerely thank the HEAL-SWIN authors for releasing their codebase, which this repository extensively reuses and extends.
 
 ## Environment
 
